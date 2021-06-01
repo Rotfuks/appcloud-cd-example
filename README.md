@@ -1,5 +1,10 @@
-Spring Music
-============
+# AppCloud CD Example
+
+This is an example for how to continuously deploy your application to the STACKIT AppCloud. This repository is just used for Talks in the scope of the Product Ownership of the STACKIT AppCloud.
+
+For this it was forked from a simple Spring based sample application from the awesome Cloud Foundry Community and is enriched with GitHub Actions to deploy the sample application automatically and continuously to a STACKIT AppCloud Organization.
+
+# Spring Music
 
 This is a sample application for using database services on [Cloud Foundry](http://cloudfoundry.org) with the [Spring Framework](http://spring.io) and [Spring Boot](http://projects.spring.io/spring-boot/).
 
