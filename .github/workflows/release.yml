@@ -17,7 +17,6 @@ jobs:
       CF_ORG: ${{ secrets.CF_ORG }}
       CF_SPACE: ${{ secrets.CF_SPACE }}
     steps:
-      - uses: actions/checkout@v2
       - name: build cf container
         run: docker build . --file deploy/Dockerfile --tag cf
       - name: run cf push
