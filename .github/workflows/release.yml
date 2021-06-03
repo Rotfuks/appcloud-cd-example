@@ -15,8 +15,9 @@ jobs:
       CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
       CF_ORG: ${{ secrets.CF_ORG }}
       CF_SPACE: ${{ secrets.CF_SPACE }}
-    runs:
-      using: "docker"
-      image: "Dockerfile"
-      args:
-        - target
+    steps:
+      - uses: actions/checkout@v2
+      - name: build cf container
+        run: docker build . --file Dockerfile --tag cf
+      - name: run cf target
+        run: docker run cf target
