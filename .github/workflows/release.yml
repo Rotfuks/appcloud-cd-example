@@ -20,5 +20,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: build cf container
         run: docker build . --file deploy/Dockerfile --tag cf
-      - name: run cf target
-        run: docker run cf target
+      - name: run cf push
+        run: docker run -e CF_API -e CF_USER -e CF_PASSWORD -e CF_ORG -e CF_SPACE cf push
