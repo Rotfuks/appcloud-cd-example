@@ -19,6 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build cf container
-        run: docker build . --file Dockerfile --tag cf
+        run: docker build . --file deploy/Dockerfile --tag cf
       - name: run cf target
         run: docker run cf target
