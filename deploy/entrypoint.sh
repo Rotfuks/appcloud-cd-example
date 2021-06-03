@@ -1,8 +1,8 @@
-cf api "$INPUT_CF_API"
-cf auth "$INPUT_CF_USERNAME" "$INPUT_CF_PASSWORD"
+cf api "$CF_API"
+cf auth "$CF_USERNAME" "$CF_PASSWORD"
 
-if [ -n "$INPUT_CF_ORG" ] && [ -n "$INPUT_CF_SPACE" ]; then
-  cf target -o "$INPUT_CF_ORG" -s "$INPUT_CF_SPACE"
+if [ -n "$CF_ORG" ] && [ -n "$CF_SPACE" ]; then
+  cf target -o "$CF_ORG" -s "$CF_SPACE"
 fi
 
 sh -c "cf7 $*"
