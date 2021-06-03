@@ -9,6 +9,7 @@ on:
 jobs:
   deploy:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
     env:
       CF_API: ${{ secrets.CF_API }}
       CF_USERNAME: ${{ secrets.CF_USER }}
