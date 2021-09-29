@@ -1,8 +1,8 @@
 [
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
-        "artist": "Nirvana",
-        "title": "Nevermind",
+        "artist": "Dominik Kress",
+        "title": "CD2SAC",
         "releaseYear": "1991",
         "genre": "Rock"
     },
