@@ -1,10 +1,10 @@
 [
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
-        "artist": "Pink Floys",
-        "title": "Dark side of the mooon",
-        "releaseYear": "1991",
-        "genre": "Rock"
+        "artist": "Reternity",
+        "title": "Shadows",
+        "releaseYear": "2020",
+        "genre": "Metal"
     },
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
